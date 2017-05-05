@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oving2.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="285.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="315.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField alignment="CENTER" editable="false" prefHeight="57.0" prefWidth="222.0" text="Formål:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField id="formaal" fx:id="formaal" prefHeight="65.0" prefWidth="300.0" promptText="Skriv formål her" GridPane.columnIndex="1" />
+      <TextField alignment="CENTER" editable="false" text="Rom:" GridPane.rowIndex="1">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField id="rom" fx:id="Rom" prefHeight="64.0" prefWidth="315.0" promptText="Skriv inn romnummer" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField alignment="CENTER" editable="false" text="Dato:" GridPane.rowIndex="2">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" text="Fra-tidspunkt:" GridPane.rowIndex="3">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" text="Til-tidspunkt:" GridPane.rowIndex="4">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" text="Repetisjonsfrekvens:" GridPane.rowIndex="5">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" editable="false" text="Slutt-dato:" GridPane.rowIndex="6">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <DatePicker id="dato" fx:id="dato" prefHeight="60.0" prefWidth="316.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <ComboBox id="fraTime" fx:id="fraTime" prefHeight="59.0" prefWidth="155.0" promptText="time" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ComboBox id="fraMinutt" fx:id="fraMinutt" prefHeight="61.0" prefWidth="160.0" promptText="minutt" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+      <ComboBox id="tilTime" fx:id="tilTime" prefHeight="70.0" prefWidth="157.0" promptText="time" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ComboBox id="tilMinutt" fx:id="tilMinutt" prefHeight="67.0" prefWidth="160.0" promptText="minutt" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+      <TextField id="Repetisjonsfrekvens" fx:id="RepetisjonsFrekvens" prefHeight="43.0" prefWidth="315.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <DatePicker id="sluttDato" fx:id="sluttDato" prefHeight="37.0" prefWidth="285.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <TextField editable="false" text="Bekreft bestilling: " GridPane.rowIndex="7">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" prefHeight="62.0" prefWidth="285.0" text="Tilbakemelding:" GridPane.rowIndex="8">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tilbakemelding" editable="false" prefHeight="56.0" prefWidth="315.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="verifikasjonsKnapp" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onConfirmation" text="Bekreft bestilling" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
